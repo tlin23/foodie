@@ -5,17 +5,18 @@ from sqlalchemy.exc import DBAPIError
 
 from .models import (
     DBSession,
-    MyModel,
     )
 
 
-@view_config(route_name='home', renderer='templates/mytemplate.pt')
-def my_view(request):
-    try:
-        one = DBSession.query(MyModel).filter(MyModel.name == 'one').first()
-    except DBAPIError:
-        return Response(conn_err_msg, content_type='text/plain', status_int=500)
-    return {'one': one, 'project': 'foodie'}
+@view_config(route_name='main', renderer='templates/main.jinja2')
+def main(request):
+    gmapAPIKey = 'AIzaSyCfHLNcaqTGEcYj0EU1Yqr0v78LwMoQiMM'
+    return { 'gmapAPIKey' : gmapAPIKey }
+
+@view_config(route_name='stub', renderer='templates/stub.jinja2')
+def stub(request):
+    gmapAPIKey = 'AIzaSyCfHLNcaqTGEcYj0EU1Yqr0v78LwMoQiMM'
+    return { 'gmapAPIKey' : gmapAPIKey }
 
 
 conn_err_msg = """\
