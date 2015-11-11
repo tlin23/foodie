@@ -17,6 +17,13 @@ from zope.sqlalchemy import ZopeTransactionExtension
 DBSession = scoped_session(sessionmaker(extension=ZopeTransactionExtension()))
 Base = declarative_base()
 
+class LocationModel(Base):
+    __tablename__ = 'locations'
+    id = Column(Integer, primary_key=True)
+    name = Column(Text)
+    food_style = Column(Text)
+    address = Column(Text)
+    coordinates = Column(Text)
 
 class MyModel(Base):
     __tablename__ = 'models'
