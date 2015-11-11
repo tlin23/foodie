@@ -399,7 +399,7 @@
       </Placemark>
       <Placemark id="kml_48">
          <name>Hot Dogs Stand</name>
-         <description><![CDATA[Food Style: Hot Dogs- <br> 1700 E Broadway Vancouver BC <br> <br> Learn more about <a href='http://vancouver.ca/'>City of Vancouver</a><br> Phone: 3-1-1 or 604-873-7000 <br> <br> <a href='http://maps.google.com/maps?daddr=49.2622160476583,-123.069072741187'>Get directions</a>]]></description>
+         <description><![CDATA[Food Style: Hot Dogs <br> 1700 E Broadway Vancouver BC <br> <br> Learn more about <a href='http://vancouver.ca/'>City of Vancouver</a><br> Phone: 3-1-1 or 604-873-7000 <br> <br> <a href='http://maps.google.com/maps?daddr=49.2622160476583,-123.069072741187'>Get directions</a>]]></description>
          <styleUrl>#KMLStyler_Food_Old</styleUrl>
          <Point>
             <coordinates>-123.069072741187,49.2622160476583,0</coordinates>
