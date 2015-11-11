@@ -7,10 +7,12 @@ from .models import (
     DBSession,
     )
 
+import Utils.utils
 
 @view_config(route_name='main', renderer='templates/main.jinja2')
 def main(request):
     gmapAPIKey = 'AIzaSyCfHLNcaqTGEcYj0EU1Yqr0v78LwMoQiMM'
+    Utils.utils.parseKML()
     return { 'gmapAPIKey' : gmapAPIKey }
 
 @view_config(route_name='stub', renderer='templates/stub.jinja2')
